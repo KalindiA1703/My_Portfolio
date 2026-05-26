@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kalindi Saxena | Strategic HR Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#060816;
+color:white;
+overflow-x:hidden;
+}
+
+/* Background Glow */
+
+body::before{
+content:'';
+position:fixed;
+width:500px;
+height:500px;
+background:rgba(91,108,255,0.14);
+filter:blur(170px);
+top:-200px;
+left:-200px;
+z-index:-1;
+}
+
+body::after{
+content:'';
+position:fixed;
+width:450px;
+height:450px;
+background:rgba(0,174,255,0.10);
+filter:blur(170px);
+bottom:-200px;
+right:-150px;
+z-index:-1;
+}
+
+.container{
+width:88%;
+max-width:1250px;
+margin:auto;
+}
+
+section{
+padding:55px 0;
+}
+
+.section-title{
+font-size:42px;
+font-weight:800;
+margin-bottom:55px;
+text-align:center;
+background:linear-gradient(to right,#ffffff,#d5ddff,#8ea2ff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+padding:18px 0;
+backdrop-filter:blur(18px);
+background:rgba(6,8,22,0.78);
+border-bottom:1px solid rgba(255,255,255,0.05);
+z-index:999;
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:22px;
+font-weight:800;
+}
+
+.nav-links{
+display:flex;
+gap:30px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#c3cce0;
+font-size:14px;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#8ea2ff;
+}
+
+/* HERO */
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+}
+
+.hero-grid{
+margin-top:25px;
+display:grid;
+grid-template-columns:1.2fr 0.8fr;
+gap:60px;
+align-items:center;
+}
+
+.badge{
+display:inline-block;
+padding:10px 18px;
+border-radius:30px;
+background:rgba(91,108,255,0.10);
+border:1px solid rgba(91,108,255,0.18);
+color:#bcc8ff;
+font-size:13px;
+margin-bottom:24px;
+}
+
+.hero h1{
+font-size:68px;
+line-height:1.1;
+margin-bottom:24px;
+font-weight:800;
+}
+
+.hero p{
+font-size:17px;
+line-height:1.9;
+color:#c3cce0;
+margin-bottom:35px;
+max-width:700px;
+}
+
+.btn-group{
+display:flex;
+gap:18px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:14px 26px;
+border-radius:14px;
+text-decoration:none;
+font-weight:600;
+transition:0.4s;
+display:inline-block;
+}
+
+.primary-btn{
+background:linear-gradient(135deg,#5b6cff,#4f63ff);
+color:white;
+box-shadow:0 14px 35px rgba(76,92,255,0.28);
+}
+
+.secondary-btn{
+background:rgba(255,255,255,0.04);
+border:1px solid rgba(255,255,255,0.08);
+color:white;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+/* GLASS */
+
+.glass{
+background:rgba(255,255,255,0.04);
+border:1px solid rgba(255,255,255,0.08);
+backdrop-filter:blur(20px);
+border-radius:26px;
+padding:36px;
+transition:0.4s;
+margin:30px;
+}
+
+.glass:hover{
+transform:translateY(-8px);
+border-color:#5b6cff;
+}
+
+.kpi-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:18px;
+margin-top:22px;
+
+justify-content:center;
+}
+
+.kpi{
+padding:24px;
+border-radius:18px;
+background:rgba(255,255,255,0.04);
+border:1px solid rgba(255,255,255,0.05);
+transition:0.3s;
+text-align:center;
+}
+
+.kpi:hover{
+background:rgba(91,108,255,0.08);
+transform:translateY(-4px);
+}
+
+.kpi h3{
+font-size:30px;
+margin-bottom:8px;
+color:#8ea2ff;
+}
+
+/* ABOUT */
+
+.about-box{
+padding:42px;
+border-radius:26px;
+background:rgba(255,255,255,0.04);
+border:1px solid rgba(255,255,255,0.08);
+backdrop-filter:blur(20px);
+line-height:1.9;
+color:#c7d0e2;
+text-align:center;
+}
+
+.hero-image-card{
+padding:22px;
+text-align:center;
+transition:0.4s ease;
+}
+
+.hero-image-card:hover{
+transform:translateY(-6px);
+box-shadow:0 20px 50px rgba(0,0,0,0.35);
+}
+
+.profile-image{
+height:300px;
+max-width:360px;
+border-radius:24px;
+object-fit:cover;
+border:1px solid rgba(255,255,255,0.08);
+box-shadow:0 10px 40px rgba(0,0,0,0.28);
+transition:0.4s;
+}
+
+.profile-image:hover{
+transform:scale(1.02);
+}
+
+.profile-content{
+margin-top:24px;
+}
+
+.profile-content h3{
+font-size:30px;
+margin-bottom:10px;
+color:white;
+}
+
+.profile-content p{
+color:#aeb8d0;
+font-size:16px;
+line-height:1.7;
+}
+
+/* REMOVE EXTRA GAP */
+
+.section{
+padding:80px 0;
+}
+
+/* BETTER MOBILE */
+
+@media(max-width:900px){
+
+.hero-grid{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.profile-image{
+max-width:300px;
+}
+
+}
+
+/* CARDS */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+padding:32px;
+border-radius:24px;
+background:rgba(255,255,255,0.04);
+border:1px solid rgba(255,255,255,0.08);
+backdrop-filter:blur(18px);
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+border-color:#5b6cff;
+background:rgba(91,108,255,0.08);
+}
+
+.card h3{
+margin-bottom:18px;
+font-size:22px;
+}
+
+/* SKILLS */
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+}
+
+.skill{
+padding:10px 14px;
+border-radius:12px;
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.06);
+font-size:13px;
+transition:0.3s;
+}
+
+.skill:hover{
+background:#5b6cff;
+transform:translateY(-3px);
+}
+
+/* EXPERIENCE */
+
+.timeline{
+display:flex;
+flex-direction:column;
+gap:30px;
+}
+
+.timeline-item{
+padding:38px;
+border-radius:24px;
+background:rgba(255,255,255,0.04);
+border:1px solid rgba(255,255,255,0.08);
+border-left:5px solid #5b6cff;
+backdrop-filter:blur(18px);
+transition:0.4s;
+}
+
+.timeline-item:hover{
+transform:translateY(-6px);
+}
+
+.timeline-item h3{
+font-size:28px;
+margin-bottom:10px;
+}
+
+.timeline-item h4{
+margin-bottom:20px;
+color:#8ea2ff;
+font-weight:500;
+}
+
+.timeline-item ul{
+padding-left:18px;
+}
+
+.timeline-item li{
+margin-bottom:14px;
+line-height:1.8;
+color:#c4cce0;
+}
+
+/* CTA */
+
+.cta{
+padding:55px;
+border-radius:28px;
+background:rgba(91,108,255,0.08);
+border:1px solid rgba(255,255,255,0.08);
+backdrop-filter:blur(18px);
+text-align:center;
+}
+
+.cta p{
+margin-top:15px;
+line-height:1.8;
+color:#c4cce0;
+}
+
+/* FOOTER */
+
+footer{
+padding:35px;
+text-align:center;
+border-top:1px solid rgba(255,255,255,0.05);
+color:#7d889d;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.hero-grid{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.hero h1{
+font-size:50px;
+}
+
+.nav-links{
+display:none;
+}
+
+.kpi-grid{
+grid-template-columns:1fr;
+
+}
+
+.btn-group{
+justify-content:center;
+}
+
+.section-title{
+font-size:35px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<div class="container nav">
+
+<div class="logo">
+Kalindi Saxena
+</div>
+
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#skills">Competencies</a>
+<a href="#experience">Experience</a>
+<a href="#certifications">Certifications</a>
+<a href="#contact">Contact</a>
+</div>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container hero-grid">
+
+<!-- LEFT CONTENT -->
+
+<div>
+
+<div class="badge">
+HR MANAGER • STRATEGIC HR • HRBP POSITIONING
+</div>
+
+<h1>
+Driving Business Impact Through Strategic HR
+</h1>
+
+<p>
+HR professional with strong exposure across employee relations, workforce management, payroll operations, HR analytics, PMS, learning initiatives, employee engagement, and organizational HR transformation while continuously building strategic HRBP capabilities.
+</p>
+
+<div class="btn-group">
+
+<a href="https://www.linkedin.com/in/kalindisaxena1703" target="_blank" class="btn primary-btn">
+LinkedIn
+</a>
+
+<a href="mailto:YOURMAIL@gmail.com" class="btn secondary-btn">
+Email Me
+</a>
+
+<a href="https://wa.me/91YOURNUMBER?text=Hi%20Kalindi,%20I%20visited%20your%20portfolio." target="_blank" class="btn secondary-btn">
+WhatsApp
+</a>
+
+</div>
+
+</div>
+
+<!-- RIGHT IMAGE CARD -->
+
+<div class="glass hero-image-card">
+
+<img src="images/kalindi.jpeg" alt="Kalindi Saxena" class="profile-image">
+
+<div class="profile-content">
+
+<h3>
+Kalindi Saxena
+</h3>
+
+<p>
+HR Manager • Strategic HR Professional • HRBP Aspirant
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="glass">
+
+<h3 style="margin-bottom:25px;">
+🌟 HR Impact Snapshot
+</h3>
+
+<div class="kpi-grid">
+
+<div class="kpi">
+<h3>13+</h3>
+<p>Branches Coordination</p>
+</div>
+
+<div class="kpi">
+<h3>1 Day</h3>
+<p>Payroll Turnaround</p>
+</div>
+
+<div class="kpi">
+<h3>PMS</h3>
+<p>Performance Process Improvement</p>
+</div>
+
+<div class="kpi">
+<h3>HR Analytics</h3>
+<p>Data-Driven Reporting</p>
+</div>
+
+</div>
+
+
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<div class="container">
+
+<h2 class="section-title">
+About Me
+</h2>
+
+<div class="about-box">
+
+Experienced HR professional with expertise across employee relations, workforce management, payroll operations, PMS, employee engagement, HR analytics, employee experience, and organizational HR initiatives.
+
+My experience evolved from operational HR into implementing strategic people practices, employee development planning, workforce optimization, performance systems, and leadership collaboration.
+
+Currently strengthening Strategic HRBP capabilities through SHRM competency learning, practical implementation, leadership understanding, business alignment, and modern workforce management approaches.
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<div class="container">
+
+<h2 class="section-title">
+Core HR Competencies
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>
+🤝 Strategic HR
+</h3>
+
+<div class="skills">
+<div class="skill">Business Partnering</div>
+<div class="skill">Stakeholder Management</div>
+<div class="skill">Change Management</div>
+<div class="skill">Strategic HR</div>
+<div class="skill">Organizational Development</div>
+<div class="skill">Workforce Planning</div>
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>
+👥 Employee Relations
+</h3>
+
+<div class="skills">
+<div class="skill">Employee Engagement</div>
+<div class="skill">Grievance Handling</div>
+<div class="skill">Rewards & Recognition</div>
+<div class="skill">Culture Building</div>
+<div class="skill">Conflict Resolution</div>
+<div class="skill">Employee Experience</div>
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>
+📊 Workforce Management
+</h3>
+
+<div class="skills">
+<div class="skill">Payroll Management</div>
+<div class="skill">Attendance Management</div>
+<div class="skill">Leave Management</div>
+<div class="skill">HRMS</div>
+<div class="skill">Policy Implementation</div>
+<div class="skill">Operations Management</div>
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>
+🎯 Performance Management
+</h3>
+
+<div class="skills">
+<div class="skill">PMS</div>
+<div class="skill">Appraisal Systems</div>
+<div class="skill">Goal Alignment</div>
+<div class="skill">Performance Reviews</div>
+<div class="skill">Feedback Systems</div>
+<div class="skill">KPI Tracking</div>
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>
+🎓 Learning & Development
+</h3>
+
+<div class="skills">
+<div class="skill">Training Coordination</div>
+<div class="skill">Capability Building</div>
+<div class="skill">Employee Development</div>
+<div class="skill">Internal Training</div>
+<div class="skill">Learning Initiatives</div>
+<div class="skill">L&D Coordination</div>
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>
+📈 HR Analytics
+</h3>
+
+<div class="skills">
+<div class="skill">HR MIS</div>
+<div class="skill">Dashboard Reporting</div>
+<div class="skill">Excel Reporting</div>
+<div class="skill">Data Interpretation</div>
+<div class="skill">Workforce Analytics</div>
+<div class="skill">Power BI</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- EXPERIENCE -->
+
+<section id="experience">
+
+<div class="container">
+
+<h2 class="section-title">
+Professional Experience
+</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<h3>
+Assistant Manager – Human Resources
+</h3>
+
+<h4>
+Globocom Infotech Pvt. Ltd. • Mumbai • Jun 2025 – Present
+</h4>
+
+<ul>
+
+<li>Managed PMS cycles, appraisal coordination, performance reviews, employee feedback systems, and leadership discussions.</li>
+
+<li>Reduced payroll processing turnaround timelines through operational optimization and process efficiency.</li>
+
+<li>Implemented employee engagement initiatives including rewards & recognition, town halls, celebrations, pulse surveys, and employee motivation programs.</li>
+
+<li>Handled employee grievances related to payroll, attendance, leave management, mediclaims, and employee support.</li>
+
+<li>Collaborated with HODs for employee development planning and workforce coordination.</li>
+
+<li>Prepared HR analytics reports, dashboards, PMS reports, workforce insights, and management reporting.</li>
+
+<li>Improved appraisal processes with better structure, forms, employee communication, and coordination.</li>
+
+<li>Supported onboarding, induction process creation, employee experience improvement, and HRMS management.</li>
+
+</ul>
+
+</div>
+
+<div class="timeline-item">
+
+<h3>
+Senior Executive – Human Resources
+</h3>
+
+<h4>
+Alzato Overseas Pvt. Ltd. • Indore • May 2021 – Dec 2024
+</h4>
+
+<ul>
+
+<li>Supported organizational growth from 1 to 13 branches through workforce coordination and HR operations.</li>
+
+<li>Managed recruitment, onboarding, payroll coordination, attendance systems, HR documentation, and employee support activities.</li>
+
+<li>Handled workforce management, operational HR processes, employee relations, and reporting.</li>
+
+<li>Prepared HR reports, workforce dashboards, attendance analytics, and management coordination reports.</li>
+
+<li>Supported employee engagement, training coordination, and HR operational initiatives.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CERTIFICATIONS -->
+
+<section id="certifications">
+
+<div class="container">
+
+<h2 class="section-title">
+Certifications & Professional Learning
+</h2>
+
+
+<div class="cards">
+
+<div class="card">
+
+<h3>
+📊 Advance HR Analytics
+</h3>
+
+<p style="line-height:1.9; color:#c4cce0;">
+Indian Institute of Management (IIM) Rohtak • Issued Mar 2025
+</p>
+
+<div class="skills" style="margin-top:18px;">
+<div class="skill">HR Analytics</div>
+<div class="skill">Workforce Insights</div>
+<div class="skill">Strategic HR</div>
+<div class="skill">Data Interpretation</div>
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>
+🎯 Performance Management Architect: Design & Implement
+</h3>
+
+<p style="line-height:1.9; color:#c4cce0;">
+Udemy • Issued May 2026
+</p>
+
+<div class="skills" style="margin-top:18px;">
+<div class="skill">PMS Design</div>
+<div class="skill">Goal Alignment</div>
+<div class="skill">Performance Reviews</div>
+<div class="skill">Appraisal Systems</div>
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>
+📈 Performance Management & Metrics
+</h3>
+
+<p style="line-height:1.9; color:#c4cce0;">
+Coursera • Issued Apr 2026
+</p>
+
+<div class="skills" style="margin-top:18px;">
+<div class="skill">Performance Metrics</div>
+<div class="skill">KPI Tracking</div>
+<div class="skill">Employee Evaluation</div>
+<div class="skill">Data Driven HR</div>
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>
+🎓 Learning & Development
+</h3>
+
+<p style="line-height:1.9; color:#c4cce0;">
+Professional exposure in employee capability development, training coordination and workforce development planning.
+</p>
+
+<div class="skills" style="margin-top:18px;">
+
+<div class="skill">Capability Building</div>
+<div class="skill">Employee Development</div>
+<div class="skill">L&D Initiatives</div>
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>
+🤖 Artificial Intelligence
+</h3>
+
+<p style="line-height:1.9; color:#c4cce0;">
+Skill Nation • Issued May 2024
+</p>
+
+<div class="skills" style="margin-top:18px;">
+<div class="skill">AI Tools</div>
+<div class="skill">Future of Work</div>
+<div class="skill">Automation</div>
+<div class="skill">AI for HR</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SHRM LEARNING -->
+
+<section id="shrm-learning">
+
+<div class="container">
+
+<h2 class="section-title">
+SHRM Learning Journey
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>
+🧠 Leadership & People Management
+</h3>
+
+<p style="line-height:1.9; color:#c4cce0; margin-bottom:18px;">
+Focused learning around leadership styles, people management approaches, and modern workforce leadership techniques aligned with SHRM behavioral competencies.
+</p>
+
+<div class="skills">
+
+<div class="skill">Transformational Leadership</div>
+<div class="skill">Transactional Leadership</div>
+<div class="skill">Situational Leadership</div>
+<div class="skill">Coaching</div>
+<div class="skill">Delegating</div>
+<div class="skill">Supporting</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>
+🎯 Influence & Persuasion
+</h3>
+
+<p style="line-height:1.9; color:#c4cce0; margin-bottom:18px;">
+Learning strategic influence techniques to improve stakeholder management, leadership communication, and organizational alignment.
+</p>
+
+<div class="skills">
+
+<div class="skill">Rational Persuasion</div>
+<div class="skill">Inspirational Appeal</div>
+<div class="skill">Coalition Building</div>
+<div class="skill">Consultation</div>
+<div class="skill">Leading by Example</div>
+<div class="skill">Personal Appeal</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>
+📘 Strategic HRBP Capability Building
+</h3>
+
+<p style="line-height:1.9; color:#c4cce0; margin-bottom:18px;">
+Actively strengthening HRBP capabilities through SHRM competency learning and practical HR implementation experience.
+</p>
+
+<div class="skills">
+
+<div class="skill">Business Acumen</div>
+<div class="skill">Critical Evaluation</div>
+<div class="skill">Consultation</div>
+<div class="skill">Employee Relations</div>
+<div class="skill">Workforce Management</div>
+<div class="skill">Strategic Thinking</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<div class="container">
+
+<div class="cta">
+
+<h2 style="font-size:40px;">
+Open to Strategic HR & HRBP Opportunities
+</h2>
+
+<p>
+Interested in opportunities across HR Management, Employee Relations, Workforce Management, PMS, Employee Experience, Learning & Development, and Strategic HR initiatives.
+</p>
+
+<div class="btn-group" style="justify-content:center; margin-top:30px;">
+
+<a href="https://www.linkedin.com/in/kalindisaxena1703" target="_blank" class="btn primary-btn">
+Connect on LinkedIn
+</a>
+
+<a href="mailto:kalindisaxena713@gmail.com" class="btn secondary-btn">
+Email Me
+</a>
+
+<a href="https://wa.me/917042175822?text=Hi%20Kalindi,%20I%20visited%20your%20portfolio." target="_blank" class="btn secondary-btn">
+WhatsApp Me
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+Kalindi Saxena • HR Manager • Strategic HR Professional
+
+</footer>
+
+</body>
+
+</html>
